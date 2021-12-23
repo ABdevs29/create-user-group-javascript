@@ -365,7 +365,7 @@ header {
   background-color: #fff;
 }
 .groups-bottom-portion {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: calc(100vh - 26.875rem);
   scrollbar-color: #e9a3c9 white;
   scrollbar-width: thin;
