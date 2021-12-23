@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Create Manage Group</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/hamburger-icon.png" alt="hamburger-icon" id="hamburger-icon" onclick="activateNavbar()">
+      <section class="Logo_Cloud_Access" >
+        <img src="./images/cloud-5-24.png" class="Path" alt="logo" />
+        <h4 class="cloud">CLOUD</h4>
+        <h4>ACCESS</h4>
+      </section>
+      <section class="profile-container">
+        <div class="bell">
+          <img
+            src="./images/bell-860.png"
+            class="Bell-icon"
+            alt="notification bell"
+          />
+        </div>
+        <div class="profile">
+          <h5 class="profile-name">John.Smith</h5>
+          <h5 class="profile-network">T-MOBILE USA</h5>
+        </div>
+        <div class="profile-pic-container">
+          <img src="./images/profile-pic.png" class="profile-pic" alt="profile pic" />
+        </div>
+      </section>
+    </header>
+    <main class="body-container">
+      <nav class="navbar" id="navbar">
+      <img src="./images/close-icon.png" alt="hamburger-icon" id="hamburger-icon-nav" onclick="activateNavbar()">
+        
+        <div class="nav-top">
+          <div>
+            <h5 class="nav-headers">YOUR GROUPS/PACKS</h5>
+            <p class="nav-content">You don't have access to anything yet</p>
+          </div>
+          <hr class="divider" />
+          <div class="nav-list-section">
+            <h5 class="nav-headers">YOUR REQUESTS</h5>
+            <ul class="nav-list">
+              <li class="nav-list-items-1">
+                <h5>Pending</h5>
+                <p class="nav-list-items-banners-1">6</p>
+              </li>
+              <li class="nav-list-items-1">
+                <h5>Approved</h5>
+                <p class="nav-list-items-banners-1">0</p>
+              </li>
+              <li class="nav-list-items-1">
+                <h5>Rejected</h5>
+                <p class="nav-list-items-banners-1">0</p>
+              </li>
+            </ul>
+          </div>
+          <hr class="divider" />
+          <div class="nav-approvals">
+            <h5 class="nav-headers">YOUR APPROVALS</h5>
+            <p class="nav-content">You don't have any approvals yet</p>
+          </div>
+        <hr class="divider" />
+        </div>
+        <div class="nav-bottom-btns">
+          <div class="nav-all-groups">
+            <div></div>
+            <img src="./images/Group_icon.png" class="group-icon" alt="group-icon" />
+            <h6>ALL GROUPS</h6>
+          </div>
+          <div class="nav-all-packs">
+            <div></div>
+            <img src="./images/ICON_PACK.png" class="group-icon" alt="group-icon" />
+            <h6>ALL PACKS</h6>
+          </div>
+        </div>
+      </nav>
+      <section class="content-container" id="content-container">
+        <div class="container-all-group">
+          <h5 class="container-all-group-text">ALL GROUP:</h5>
+        </div>
+        <div class="container-recommended-groups">
+          <h5 class="container-recommended-text">RECOMMENDED GROUPS</h5>
+          <div>
+            <img
+              src="./images/Arrow_back.png"
+              class="scroll-button-image"
+              alt="left-scroll"
+              onclick='slide("left")'
+            />
+            <img
+              src="./images/Arrow_forward.png"
+              class="scroll-button-image"
+              alt="right-scroll"
+              onclick='slide("right")'
+            />
+          </div>
+        </div>
+        <section class="groups-cards-container" id="groups-cards-container">
+          <div class="groups-card">
+            <img
+              src="./images/Group_icon.png"
+              class="group-icon"
+              alt="group-icon"
+            />
+            <div class="group-card-text">
+              <h5 >ABC Security Groups</h5>
+              <h6>John Smith</h6>
+            </div>
+            <img
+              src="./images/+Add_pack Copy.png"
+              class="add-icon"
+              alt="add-icon"
+            />
+          </div>
+          <div class="groups-card">
+            <img
+              src="./images/Group_icon.png"
+              class="group-icon"
+              alt="group-icon"
+            />
+            <div class="group-card-text">
+              <h5 style=" flex-wrap: wrap ">1HRCare Talent Scout Groups</h5>
+              <h6>John Smith, Lisandro Matos</h6>
+            </div>
+            <img
+              src="./images/+Add_pack Copy.png"
+              class="add-icon"
+              alt="add-icon"
+            />
+          </div>
+          <div class="groups-card">
+            <img
+              src="./images/Group_icon.png"
+              class="group-icon"
+              alt="group-icon"
+            />
+            <div class="group-card-text">
+              <h5 >ABC Security Groups Scouts</h5>
+              <h6>John Smith, Jenny Chioke</h6>
+            </div>
+            <img
+              src="./images/+Add_pack Copy.png"
+              class="add-icon"
+              alt="add-icon"
+            />
+          </div>
+          <div class="groups-card">
+            <img
+              src="./images/Group_icon.png"
+              class="group-icon"
+              alt="group-icon"
+            />
+            <div class="group-card-text">
+              <h5 >1HRCare Talent Scout Groups</h5>
+              <h6>John Smith, Lisandro Matos</h6>
+            </div>
+            <img
+              src="./images/+Add_pack Copy.png"
+              class="add-icon"
+              alt="add-icon"
+            />
+          </div>
+          <div class="groups-card">
+            <img
+              src="./images/Group_icon.png"
+              class="group-icon"
+              alt="group-icon"
+            />
+            <div class="group-card-text">
+              <h5 >ABC Security Groups Scouts</h5>
+              <h6>John Smith, Lisandro Matos</h6>
+            </div>
+            <img
+              src="./images/+Add_pack Copy.png"
+              class="add-icon"
+              alt="add-icon"
+            />
+          </div>
+          <div class="groups-card">
+            <img
+              src="./images/Group_icon.png"
+              class="group-icon"
+              alt="group-icon"
+            />
+            <div class="group-card-text">
+              <h5 >1HRCare Talent Scout</h5>
+              <h6>John Smith, Lisandro Matos</h6>
+            </div>
+            <img
+              src="./images/+Add_pack Copy.png"
+              class="add-icon"
+              alt="add-icon"
+            />
+          </div>
+          <div class="groups-card">
+            <img
+              src="./images/Group_icon.png"
+              class="group-icon"
+              alt="group-icon"
+            />
+            <div class="group-card-text">
+              <h5 >1HRCare Talent Scout Groups</h5>
+              <h6>John Smith, Lisandro Matos</h6>
+            </div>
+            <img
+              src="./images/+Add_pack Copy.png"
+              class="add-icon"
+              alt="add-icon"
+            />
+          </div>
+          <div class="groups-card">
+            <img
+              src="./images/Group_icon.png"
+              class="group-icon"
+              alt="group-icon"
+            />
+            <div class="group-card-text">
+              <h5 >1HRCare Talent Scout</h5>
+              <h6>John Smith, Lisandro Matos</h6>
+            </div>
+            <img
+              src="./images/+Add_pack Copy.png"
+              class="add-icon"
+              alt="add-icon"
+            />
+          </div>
+        </section>
+        <section class="group-details-container">
+          <div class="group-details-banner">
+            <h5 class="container-all-group-text">ALL GROUPS</h5>
+            <div>
+              <input
+                type="search"
+                name="search-field"
+                placeholder="Find a Group"
+                id="search-field"
+                onkeyup="debounceForSearch()"
+              />
+              <button class="new-group-btn">+ New Group</button>
+            </div>
+          </div>
+          <section class="groups-table-container">
+            <div class="groups-table-1">
+              <h5>
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                 <span>GROUP NAME <img src="./images/Sorting.png" alt="sorting-icon" id="sorting-icon" onclick="sortingName()"></span>
+                 
+              </h5>
+               <h5>GROUP OWNER <img src="./images/Sorting.png" alt="sorting-icon" id="sorting-icon" onclick="sortingOwner()"></h5>
+              <h5>CREATED ON<img src="./images/Sorting.png" alt="sorting-icon" id="sorting-icon" onclick="sortingDate()"></h5>
+              <h5>ACTIONS</h5>
+            </div>
+            <div class="groups-bottom-portion">
+
+            <div class="groups-table-2" id="0">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">
+                    ABC Security Groups
+                  </p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">John Smith</p>
+              </div>
+              <p class="groups-table-2-group-date">08/13/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+            <div class="groups-table-2" id="1">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">
+                    1HRCareTalent Scout Sr.Managers 1HRCareTalent Scout Sr.Managers 1HRCareTalent Scout Sr.Managers
+                    <!-- <span class="tooltiptext">1HRCareTalent Scout Sr.Managers 1HRCareTalent Scout Sr.Managers 1HRCareTalent Scout Sr.Managers</span> -->
+                  </p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">Neil Tyson</p>
+              </div>
+              <p class="groups-table-2-group-date">08/14/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+              
+            </div>
+            <div class="groups-table-2" id="2">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">ATeam</p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">Uche Ogbonna</p>
+              </div>
+              <p class="groups-table-2-group-date">08/17/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+            <div class="groups-table-2" id="3">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">Ar Orange Crush</p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">Siri Jakobsson</p>
+              </div>
+              <p class="groups-table-2-group-date">08/18/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+
+            <div class="groups-table-2" id="4">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">
+                    Br HRCare Talent Scout Sr.Managers
+                  </p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">Saami Al Samad</p>
+              </div>
+              <p class="groups-table-2-group-date">08/20/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+            <div class="groups-table-2" id="5">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">AppRas</p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">Sebastian Bennett</p>
+              </div>
+              <p class="groups-table-2-group-date">08/22/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+            <div class="groups-table-2" id="6">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">
+                    CBE Security groups
+                  </p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+                <p class="groups-table-2-group-owner">Phạm Quốc Hùng</p>
+              </div>
+              <p class="groups-table-2-group-date">08/15/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+            <div class="groups-table-2" id="7">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">D HRTeam</p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">María Paula</p>
+              </div>
+              <p class="groups-table-2-group-date">08/23/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+            <div class="groups-table-2" id="8">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">RasApp</p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">Klavdia Dedova</p>
+              </div>
+              <p class="groups-table-2-group-date">08/10/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+          
+            <div class="groups-table-2" id="9">
+              <div class="groups-table-2-group">
+                <input type="checkbox" name="check-box" id="check-box-1" />
+                <div class="groups-table-2-group-name">
+                  <img
+                    src="./images/Group_icon.png"
+                    class="user-group-icon"
+                    alt="user-group-icon"
+                  />
+                  <p class="groups-table-2-group-name-text">Orange Crush</p>
+                </div>
+              </div>
+              <div class="groups-table-2-group-owner-name">
+                <img
+                src="./images/Multiple.png"
+                class="user-icon"
+                alt="user-icon"
+              />
+              <p class="groups-table-2-group-owner">Lisandro Matos</p>
+              </div>
+              <p class="groups-table-2-group-date">08/09/2021</p>
+              <p class="groups-table-2-btn"><button class="join-group-btn">+ Join</button></p>
+            </div>
+          </div>
+          <div class="footer">
+            <p>Showing 10-20</p>
+            <p>Goto <input class="goto-input" type="number" /></p>
+            <div class="pagination">
+              <img
+                src="./images/Arrow_back.png"
+                class="scroll-button-image"
+                alt="back-arrow"
+              />
+              <p class="goto-page-num">1</p>
+              <p class="goto-page-num">2</p>
+              <p class="goto-page-num">3</p>
+              <p>...</p>
+              <p class="goto-page-num">10</p>
+            </div>
+            <div></div>
+          </div>
+          </section>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
