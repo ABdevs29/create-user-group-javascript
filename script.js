@@ -17,14 +17,21 @@ function slide(direction){
             window.clearInterval(slideVar);
         }
     }, 50);
+
 }
 
-
+let countslide = 0;
 function activateNavbar (){
     let navbar = document.getElementById('navbar');
     let content = document.getElementById('content-container');
     navbar.classList.toggle("active");
-    content.classList.toggle('deactive')
+    content.classList.toggle('deactive');
+    countslide++;
+    if (countslide % 2 != 0) {
+        document.getElementById("overlay").style.display = "block";
+    } else {
+        document.getElementById("overlay").style.display = "none";
+    }
 }
 
 
@@ -175,8 +182,7 @@ function sortingDate () {
 
 }
 
-
-//search function 
+//Search function
 function searchFn () {
     for (let i=0; i< groupName.length; i++) {
         document.getElementById(i).style.display = "none";
@@ -185,6 +191,11 @@ function searchFn () {
     var input, filter;
     input = document.getElementById("search-field");
     filter = input.value.toUpperCase();
+    document.getElementById("search-field").addEventListener("search", function (event){
+        for (let i=0; i< groupName.length; i++) {
+            document.getElementById(i).style.display = "";
+        }
+    })
 
     for (let i=0; i< groupName.length; i++) {
         if (groupName[i].innerText.toUpperCase().includes(filter)) {
@@ -193,6 +204,7 @@ function searchFn () {
         if (groupOwner[i].innerText.toUpperCase().includes(filter)) {
             document.getElementById(i).style.display = "";
         }
+
     }
 }
 
