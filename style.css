@@ -127,8 +127,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 0.625rem 7.25rem 1.5rem;
-    height: 23rem;
+    padding: 1.25rem 0.625rem 5.25rem 1.5rem;
+    height: 20rem;
   }
   .nav-bottom-btns {
     display: flex;
@@ -179,6 +179,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 0.4375rem;
+    margin-bottom: 1rem;
   }
   .nav-list {
     display: flex;
@@ -252,6 +253,7 @@ header {
     color: #46475c;
     cursor: pointer;
     transition: all 200ms;
+
   }
 .nav-all-packs h6 {
   font-size: 0.6875rem;
@@ -391,6 +393,9 @@ header {
 #search-field:focus {
   outline: none;
 }
+#search-field::-webkit-search-cancel-button:hover {
+  cursor: pointer;
+}
 .new-group-btn {
   background-color: #ea168b;
   border: 1px solid #ea168b;
@@ -417,9 +422,10 @@ header {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
-  background-color: #dee3e6;
+  background-color: #f8fafb;
   padding: 0.5rem 0.5rem 0.5rem 0.25rem;
   box-shadow: inset 0 -1px 0 0 #dfe3e7;
+  border-top: 1px solid #dfe3e7;
 }
 .groups-table-1 h5 {
   font-size: 0.625rem;
@@ -576,6 +582,20 @@ header {
   height: 22px;
   width: 22px;
   border-radius: 50%;
+  /* background-color: #e9a3c9; */
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
 }
 
 @media only screen and (min-height: 800px) {
@@ -702,6 +722,8 @@ header {
   .content-container {
     width: 90vw;
   }
+  .scroll-button-image {
+  }
 }
 
 @media only screen and (max-width: 1030px) {
@@ -727,7 +749,7 @@ header {
   }
   
 }
-@media only screen and (width: 1024px) and (height: 1366px) {
+@media only screen and (width: 1024px) and (height: 1366px) { /*changes*/
   .groups-bottom-portion {
     height: fit-content;
   }
@@ -770,7 +792,7 @@ header {
     position: fixed;
     left: 0px;
     top: 0px;
-    width: 100%;
+    width: 220px;
     height: 100%;
     z-index: 6;
     transform: translate(0px, 0px);
